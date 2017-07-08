@@ -1,11 +1,12 @@
 import React from 'react';
 import { connect } from 'react-redux';
 
+import heroContainer from './features/hero/heroContainer';
 
 //load components
 const App = () => (
   <div>
-    <h1>Shitty portfolio site!</h1>
+    <heroContainer />
   </div>
 );
 
