@@ -1,7 +1,8 @@
 .heroContainer {
   height: 90vh;
-  background-color: grey;
-  object-fit: contain;
+  background-image: url('/assets/heroBackground20003000.jpg');
+  background-size: cover;
+  background-position: center;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -12,6 +13,7 @@
 .textContainer {
   width: 100%;
   font-size: 5em;
+  color: white;
   left: 0px;
   top: 0px;
 }
