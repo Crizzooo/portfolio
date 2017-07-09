@@ -1,6 +1,6 @@
 .heroContainer {
   height: 90vh;
-  background-image: url('/assets/heroBackground20003000.jpg');
+  background-image: linear-gradient( rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url('/assets/heroBackground20003000.jpg');
   background-size: cover;
   background-position: center;
   display: flex;
