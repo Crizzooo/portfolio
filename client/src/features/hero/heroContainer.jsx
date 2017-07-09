@@ -11,11 +11,10 @@ const HeroContainer = () => {
   <div className="heroContainer">
     <div className="textContainer">
         <div className="row center-xs">
-          <div className="col-xs-6 right"><div>Chris</div></div>
-          <div className="col-xs-6"></div>
+          <div className="col-xs-7 col-sm-4 col-lg-2 col-xl-1 left"><div>Chris</div></div>
         </div>
         <div className="row center-xs">
-          <div className="col-xs-offset-6 col-xs-6 left"><div>Rizzo</div></div>
+          <div className="col-xs-7 col-sm-4 col-lg-2 col-xl-1 right"><div>Rizzo</div></div>
         </div>
         <div className="row center-xs">
           <a target="_blank" className="resumeLink" href="/resume"><AnimatedButton strokeColor="beige" containerStyle={{"color":"beiege"}}/></a>
