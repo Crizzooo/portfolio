@@ -1,12 +1,19 @@
 import React from 'react';
-import { Grid, Row, Col } from 'react-flexbox-grid';
 
 //load components
 import './HeroStylesheet.scss';
 
 const HeroContainer = () => (
   <div className="heroContainer">
-    <span>hello there</span>
+    <div className="textContainer">
+        <div className="row center-xs">
+          <div className="col-xs-6 right"><div>Chris</div></div>
+          <div className="col-xs-6"></div>
+        </div>
+        <div className="row center-xs">
+          <div className="col-xs-offset-6 col-xs-6 left"><div>Rizzo</div></div>
+        </div>
+    </div>
   </div>
 );
 

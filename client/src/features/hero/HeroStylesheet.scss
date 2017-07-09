@@ -1,7 +1,17 @@
 .heroContainer {
   height: 90vh;
   background-color: grey;
+  object-fit: contain;
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.textContainer {
+  width: 100%;
+  font-size: 5em;
+  left: 0px;
+  top: 0px;
 }
