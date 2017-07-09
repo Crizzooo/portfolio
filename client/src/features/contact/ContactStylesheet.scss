@@ -1,5 +1,7 @@
+@import '../../stylesheets/colorPalette.scss';
+
 .contactContainer {
   margin-top: 6.8vh;
-  background-color: black;
-  color: white;
+  background-color: $main-light;
+  color: $font-light;
 }

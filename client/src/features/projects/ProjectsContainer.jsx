@@ -3,6 +3,7 @@ import React from 'react';
 //load components
 import './ProjectsStylesheet.scss';
 
+
 const ProjectsContainer = () => (
   <div className="projectSection">
     <div className="projectContainer">
