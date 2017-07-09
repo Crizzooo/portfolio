@@ -18,7 +18,7 @@ const HeroContainer = () => {
           <div className="col-xs-offset-6 col-xs-6 left"><div>Rizzo</div></div>
         </div>
         <div className="row center-xs">
-          <a target="_blank" className="resumeLink" href="/resume"><span><AnimatedButton /></span></a>
+          <a target="_blank" className="resumeLink" href="/resume"><AnimatedButton strokeColor="beige" containerStyle={{"color":"beiege"}}/></a>
         </div>
     </div>
   </div>
