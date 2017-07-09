@@ -16,12 +16,11 @@ const HeroContainer = () => {
           <div className="col-xs-offset-6 col-xs-6 left"><div>Rizzo</div></div>
         </div>
         <div className="row center-xs">
-          <div className="col-xs-offset-4 col-xs-4 right"><AnimatedButton onClick={()=>console.log('hi')}/></div>
+          <div className="col-xs-offset-4 col-xs-4 right"><a href="/resume"><AnimatedButton/></a></div>
         </div>
     </div>
   </div>
 );
 }
-
 
 export default HeroContainer;
