@@ -1,7 +1,47 @@
 @import '../../stylesheets/colorPalette.scss';
 
 .contactContainer {
-  margin-top: 6.8vh;
+  margin-top: 3vh;
+  padding-bottom: 6.7vh;
   background-color: $main-light;
   color: $font-light;
+  width: 100%;
+}
+
+.contactHeader {
+  margin-top: 0.3em;
+  font-size: 3em;
+  text-align: center;
+  margin-bottom: 0.6em;
+}
+
+.pink {
+  background-color: pink;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.rowContainer {
+  width: 100%;
+}
+
+.contactCard {
+  height: 300px;
+  max-width: 300px;
+  padding-left: .7em;
+}
+
+.contactImageHolder {
+  height: 75%;
+  width: 100%;
+  padding: 2%;
+  background-color: rgba(0,0,0,0.2);
+}
+
+.contactImageCaption {
+  height: 25%;
+  width: 100%;
+  background-color: rgba(0,0,0,0.5);
 }
