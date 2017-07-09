@@ -2,6 +2,7 @@
 
 .heroContainer {
   height: 90vh;
+  min-height: 400px;
   background-image: linear-gradient( rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url('/assets/heroBackground20003000.jpg');
   background-size: cover;
   background-position: center;
@@ -22,5 +23,6 @@
 
 .resumeLink {
   display: inline-block;
+  padding: 25px 0;
   color: $font-light;
 }
