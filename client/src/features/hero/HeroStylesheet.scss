@@ -1,3 +1,5 @@
+@import '../../stylesheets/colorPalette.scss';
+
 .heroContainer {
   height: 90vh;
   background-image: linear-gradient( rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url('/assets/heroBackground20003000.jpg');
@@ -13,7 +15,7 @@
 .textContainer {
   width: 100%;
   font-size: 5em;
-  color: white;
+  color: $font-light;
   left: 0px;
   top: 0px;
 }
