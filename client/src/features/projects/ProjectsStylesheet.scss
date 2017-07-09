@@ -1,6 +1,6 @@
 .projectSection {
   background-color: teal;
-  height: 75vh;
+  height: 85vh;
   width: 100%;
   display: flex;
   align-items: center;
@@ -13,8 +13,12 @@
 }
 
 .triangleRow {
-  height: 33%;
+  height: 25%;
   background-color: teal;
+}
+
+.triangleRowTop {
+  height: 18%;
 }
 
 .triangleHolder {
@@ -24,9 +28,16 @@
 }
 
 .triangle {
-  height: 80%;
+  height: 100%;
   width: 100%;
-  background: linear-gradient(to right bottom, black 50%, transparent 50%)
+  background: linear-gradient(to right bottom, black 50%, transparent 50%);
+}
+
+.blackSquare {
+  display: inline-block;
+  width: 30px;
+  height: 100%;
+  background-color: black;
 }
 
 .bottomTriangle {
@@ -40,7 +51,7 @@
 }
 
 .contentRow {
-  height: 55%;
+  height: 65%;
   overflow: visible;
 }
 
@@ -62,5 +73,5 @@
   align-items: middle;
   justify-content: flex-start;
   flex-wrap: wrap;
-  height: 130%;
+  height: 70vh;
 }

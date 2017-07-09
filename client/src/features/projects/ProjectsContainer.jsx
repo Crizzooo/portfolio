@@ -6,7 +6,7 @@ import './ProjectsStylesheet.scss';
 const ProjectsContainer = () => (
   <div className="projectSection">
     <div className="projectContainer">
-      <div className="row bottom-xs triangleRow">
+      <div className="row bottom-xs triangleRowTop">
         <div className="col-xs-6 triangleHolder">
           <div className="triangle">
           </div>
