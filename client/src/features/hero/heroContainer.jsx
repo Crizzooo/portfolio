@@ -5,8 +5,6 @@ import AnimatedButton from 'react-animated-button';
 import './HeroStylesheet.scss';
 
 const HeroContainer = () => {
-  console.log(AnimatedButton, 'AnimatedButton');
-  console.dir(AnimatedButton);
   return(
   <div className="heroContainer">
     <div className="textContainer">
@@ -18,7 +16,7 @@ const HeroContainer = () => {
           <div className="col-xs-offset-6 col-xs-6 left"><div>Rizzo</div></div>
         </div>
         <div className="row center-xs">
-          <div className="col-xs-offset-4 col-xs-4 right"></div>
+          <div className="col-xs-offset-4 col-xs-4 right"><AnimatedButton onClick={()=>console.log('hi')}/></div>
         </div>
     </div>
   </div>
