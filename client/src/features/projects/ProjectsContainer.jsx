@@ -43,9 +43,7 @@ const ProjectsContainer = () => (
             </div>
         </div>
       </div>
-      <div className="row bottomTriangle">
-        <div className="col-xs-12 projectsTriangleRow">
-        </div>
+      <div className="row triangleRow bottomTriangle">
       </div>
     </div>
   </div>

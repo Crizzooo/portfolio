@@ -2,7 +2,6 @@
   background-color: teal;
   height: 75vh;
   width: 100%;
-  overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -15,6 +14,7 @@
 
 .triangleRow {
   height: 33%;
+  background-color: teal;
 }
 
 .triangleHolder {
@@ -29,6 +29,11 @@
   background: linear-gradient(to right bottom, black 50%, transparent 50%)
 }
 
+.bottomTriangle {
+  background: linear-gradient(to bottom right, transparent 50%, black 50%);
+  background-color: teal;
+}
+
 .projectsHeaderContainer {
   font-size: 3em;
   padding: 1em;
@@ -36,6 +41,7 @@
 
 .contentRow {
   height: 55%;
+  overflow: visible;
 }
 
 .cardHolder {
@@ -54,10 +60,7 @@
   overflow: scroll;
   display: flex;
   align-items: middle;
-  justify-content: center;
+  justify-content: flex-start;
   flex-wrap: wrap;
-}
-
-.bottomTriangle  {
-  height: 33%;
+  height: 130%;
 }
