@@ -17,7 +17,7 @@ const HeroContainer = () => {
           <div className="col-xs-7 col-sm-4 col-lg-2 col-xl-1 right"><div>Rizzo</div></div>
         </div>
         <div className="row center-xs">
-          <a target="_blank" className="resumeLink" href="/resume"><AnimatedButton strokeColor="beige" containerStyle={{"color":"beiege"}}/></a>
+          <a target="_blank" className="resumeLink" href="/resume"><AnimatedButton strokeColor="beige" buttonText="view resume" containerStyle={{"color":"beiege"}}/></a>
         </div>
     </div>
   </div>
