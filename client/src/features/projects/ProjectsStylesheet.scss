@@ -8,19 +8,6 @@
   justify-content: center;
 }
 
-// .nothing::before {
-//   content: '';
-//   height: 10vh;
-//   display: inline-block;
-//   position: relative;
-//   top: 0;
-//   left: 0;
-//   width: 100%;
-//   z-index: 100;
-//   background: grey;
-//   transform: skewY(-3deg);
-// }
-
 .projectContainer {
   width: 100%;
   height: 100%;
@@ -30,22 +17,47 @@
   height: 33%;
 }
 
-.projectsTriangleRow {
+.triangleHolder {
   height: 100%;
-  background-color: pink;
+  display: flex;
+  align-items: start;
+}
+
+.triangle {
+  height: 80%;
+  width: 100%;
+  background: linear-gradient(to right bottom, black 50%, transparent 50%)
+}
+
+.projectsHeaderContainer {
+  font-size: 3em;
+  padding: 1em;
 }
 
 .contentRow {
-  height: 33%;
-  background-color: blue;
+  height: 55%;
 }
 
-.content {
+.cardHolder {
+  height: 75%;
+  width: 33%;
+  padding: .4%;
+}
+
+.card {
+  background-color: pink;
+  width: 100%;
   height: 100%;
+}
+
+.contentHolder {
+  overflow: scroll;
+  display: flex;
+  align-items: middle;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .bottomTriangle  {
   height: 33%;
-  width: 100%;
-  background-color: green;
 }

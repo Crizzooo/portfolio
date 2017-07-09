@@ -6,12 +6,41 @@ import './ProjectsStylesheet.scss';
 const ProjectsContainer = () => (
   <div className="projectSection">
     <div className="projectContainer">
-      <div className="row triangleRow">
-        <div className="col-xs-12 projectsTriangleRow">
+      <div className="row bottom-xs triangleRow">
+        <div className="col-xs-6 triangleHolder">
+          <div className="triangle">
+          </div>
+        </div>
+        <div className="right projectsHeaderContainer col-xs-6">
+          <span>Projects</span>
         </div>
       </div>
-      <div className="row contentRow">
-        <div className="col-xs-12 content">
+      <div className="row center-xs contentRow">
+        <div className="col-xs-10 contentHolder">
+            <div className="cardHolder">
+              <div className="card">
+              </div>
+            </div>
+            <div className="cardHolder">
+              <div className="card">
+              </div>
+            </div>
+            <div className="cardHolder">
+              <div className="card">
+              </div>
+            </div>
+            <div className="cardHolder">
+              <div className="card">
+              </div>
+            </div>
+            <div className="cardHolder">
+              <div className="card">
+              </div>
+            </div>
+            <div className="cardHolder">
+              <div className="card">
+              </div>
+            </div>
         </div>
       </div>
       <div className="row bottomTriangle">
@@ -24,10 +53,3 @@ const ProjectsContainer = () => (
 
 
 export default ProjectsContainer;
-
-// <div className="two">
-//   <div className="right">
-//     2 adsasodasdasd asdasdasdasd asdasdas
-//   </div>
-// </div>
-// <div className="three">3</div>
