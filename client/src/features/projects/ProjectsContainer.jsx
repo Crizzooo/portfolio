@@ -13,7 +13,7 @@ const ProjectsContainer = () => (
           </div>
         </div>
         <div className="right projectsHeaderContainer col-xs-6">
-          <span>Projects</span>
+          <div className="projectsHeader">Projects</div>
         </div>
       </div>
       <div className="row center-xs contentRow">
