@@ -14,23 +14,10 @@ export default class ProjectCardControlled extends React.Component {
   handleExpandChange = (expanded) => {
     this.setState({expanded: expanded});
   };
-
-  handleToggle = (event, toggle) => {
-    this.setState({expanded: toggle});
-  };
-
-  handleExpand = () => {
-    this.setState({expanded: true});
-  };
-
-  handleReduce = () => {
-    this.setState({expanded: false});
-  };
-
   render() {
     return(
       <div className="cardHolder">
-        <Card expanded={this.state.expanded} onExpandChange={this.handleExpandChange} style={{"borderRadius":"2px","overflow":"hidden","margin":"2%","backgroundColor":"transparent"}}>
+        <Card expanded={this.state.expanded} onExpandChange={this.handleExpandChange} className="card" style={{"borderRadius":"2px","overflow":"hidden","margin":"2%","backgroundColor":"transparent"}}>
           <CardMedia
             actAsExpander={true}
             showExpandableButton={true}
