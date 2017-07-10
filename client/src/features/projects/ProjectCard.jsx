@@ -1,5 +1,6 @@
 import React from 'react';
 import {Card, CardHeader, CardMedia, CardTitle, CardText, CardActions} from 'material-ui/card';
+import Icon from './Icon.jsx';
 
 export default class ProjectCardControlled extends React.Component {
 
@@ -45,13 +46,13 @@ export default class ProjectCardControlled extends React.Component {
           >
             <img src="/assets/heroBackground20003000.jpg"/>
           </CardMedia>
-          <CardText expandable={true} style={{"backgroundColor":"grey"}}>
+          <CardText expandable={true} style={{"backgroundColor":"rgb(33, 33, 33)", "color":"white"}}>
             <p>If I am showing that means state is expanded! If I am showing that means state is expanded! If I am showing that means state is expanded! If I am showing that means state is expanded! </p>
           </CardText>
-          <CardActions expandable={true} style={{"backgroundColor":"grey", "borderTop": "black 1px solid", "textAlign":"left", "borderBottomLeftRadius":"2px",
-          "borderBottomRightRadius":"2px"}}>
-            <span>Github</span>
-            <span>Deployed</span>
+          <CardActions expandable={true} style={{"backgroundColor":"rgb(33, 33, 33)", "padding":"0px 8px 4px 8px", "textAlign":"left", "borderBottomLeftRadius":"2px",
+          "borderBottomRightRadius":"2px", "color":"white"}}>
+            <Icon iconType='github' linkTo="https://www.google.com"/>
+            <Icon iconType='chrome' linkTo="https://www.google.com"/>
           </CardActions>
         </Card>
     </div>);
