@@ -1,5 +1,7 @@
 import React from 'react';
 
+import ContactCard from './ContactCard.jsx';
+
 //load components
 import './ContactStylesheet.scss';
 
@@ -13,30 +15,7 @@ const ContactContainer = () => (
       </div>
       <div className="row center-xs">
         <div className="col-xs-10 around-xs contentHolder">
-          <div className=" col-xs-12 col-lg-3 contactCard">
-            <div className="contactImageHolder">
-            </div>
-            <div className="contactImageCaption">
-            </div>
-          </div>
-          <div className=" col-xs-12 col-lg-3 contactCard">
-            <div className="contactImageHolder">
-            </div>
-            <div className="contactImageCaption">
-            </div>
-          </div>
-          <div className=" col-xs-12 col-lg-3 contactCard">
-            <div className="contactImageHolder">
-            </div>
-            <div className="contactImageCaption">
-            </div>
-          </div>
-          <div className=" col-xs-12 col-lg-3 contactCard">
-            <div className="contactImageHolder">
-            </div>
-            <div className="contactImageCaption">
-            </div>
-          </div>
+          { [1, 2, 3, 4].map( (elem) => (<ContactCard />)) }
         </div>
       </div>
     </div>
