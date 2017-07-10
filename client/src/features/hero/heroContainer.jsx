@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router';
+
 // This is my own module from github.com/crizzo/react-animated-buttonSVG :)
 import AnimatedButton from 'react-animated-button';
 
