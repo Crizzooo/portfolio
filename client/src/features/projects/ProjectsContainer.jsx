@@ -1,6 +1,8 @@
 import React from 'react';
 
 //load components
+import ProjectCard from './ProjectCard.jsx';
+
 import './ProjectsStylesheet.scss';
 
 
@@ -18,30 +20,7 @@ const ProjectsContainer = () => (
       </div>
       <div className="row center-xs contentRow">
         <div className="col-xs-10 contentHolder">
-            <div className="cardHolder">
-              <div className="card">
-              </div>
-            </div>
-            <div className="cardHolder">
-              <div className="card">
-              </div>
-            </div>
-            <div className="cardHolder">
-              <div className="card">
-              </div>
-            </div>
-            <div className="cardHolder">
-              <div className="card">
-              </div>
-            </div>
-            <div className="cardHolder">
-              <div className="card">
-              </div>
-            </div>
-            <div className="cardHolder">
-              <div className="card">
-              </div>
-            </div>
+          { [1, 2, 3, 4].map( elem => (<ProjectCard/>) ) }
         </div>
       </div>
       <div className="row triangleRow bottomTriangle">
