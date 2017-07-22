@@ -1,6 +1,7 @@
 import React from 'react';
 
 import ContactCard from './ContactCard.jsx';
+import ContactContent from './ContactContent.js';
 
 //load components
 import './ContactStylesheet.scss';
@@ -15,12 +16,13 @@ const ContactContainer = () => (
       </div>
       <div className="row center-xs">
         <div className="col-xs-10 around-xs contentHolder">
-          { [1, 2, 3, 4].map( (elem) => (<ContactCard />)) }
+          { Object.keys(ContactContent).map( (key) =>
+            ( <ContactCard /> )
+          )}
         </div>
       </div>
     </div>
   </div>
 );
-
 
 export default ContactContainer;
