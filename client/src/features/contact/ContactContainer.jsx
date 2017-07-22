@@ -17,7 +17,7 @@ const ContactContainer = () => (
       <div className="row center-xs">
         <div className="col-xs-10 around-xs contentHolder">
           { Object.keys(ContactContent).map( (key) =>
-            ( <ContactCard /> )
+            ( <ContactCard {...ContactContent[key]} /> )
           )}
         </div>
       </div>
