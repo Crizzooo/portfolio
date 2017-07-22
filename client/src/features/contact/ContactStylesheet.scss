@@ -29,21 +29,25 @@
 }
 
 .contactCard {
-  height: 300px;
   max-width: 300px;
   padding-left: .7em;
 }
 
 .contactImageHolder {
-  height: 75%;
   width: 100%;
   padding: 2%;
   background-color: rgba(0,0,0,0.2);
 }
 
 .contactImageCaption {
-  height: 25%;
-  width: 100%;
+  width: 100;
+  padding: 2%;
   background-color: rgba(0,0,0,0.5);
   color: $font-light;
+}
+
+.svgHolder {
+  height: 200px;
+  width: 200px;
+  display: inline-block;
 }
