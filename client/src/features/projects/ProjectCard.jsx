@@ -31,7 +31,9 @@ export default class ProjectCardControlled extends React.Component {
                     "borderBottomLeftRadius": (this.state.expanded ? "0px" : "2px"),
                     "borderBottomRightRadius": (this.state.expanded ? "0px" : "2px")}}
           >
-            <img src={ this.props.imgSrc ? this.props.imgSrc : "/assets/heroBackground20003000.jpg"}/>
+            <img src={ this.props.imgSrc ? this.props.imgSrc : "/assets/heroBackground20003000.jpg"}
+                 style={{"height":"300px", "transform":"scale(1.15)"}}
+              />
           </CardMedia>
           <CardText expandable={true} style={{"backgroundColor":"rgb(33, 33, 33)", "color":"white"}}>
             <p>{ this.props.desc }</p>

@@ -16,6 +16,7 @@ module.exports = {
     title: 'cashgrounds',
     subtitle: 'platform for competitive cash video game tournaments',
     desc: 'github.com/crizzooo',
+    imgSrc: 'assets/cashgroundsProject.png',
     links: {
       github: {
         linkTo: 'https://github.com/Crizzooo/cashgrounds'
@@ -29,6 +30,7 @@ module.exports = {
     title: 'GenZed',
     subtitle: 'real-time multiplayer action game',
     desc: 'crizzodev@gmail.com',
+    imgSrc: 'assets/genzedProject1.png',
     links: {
       github: {
         linkTo: 'https://github.com/Crizzooo/zombiez'
