@@ -23,7 +23,7 @@ export default class ProjectCardControlled extends React.Component {
             showExpandableButton={true}
             openIcon={null}
             closeIcon={null}
-            overlay={<CardTitle title={ this.props.title} subtitle={ this.props.title }/>}
+            overlay={<CardTitle title={ this.props.title} subtitle={ this.props.subtitle }/>}
             overlayContentStyle={{"padding":"0",  "textAlign":"left"}}
             style={{"overflow":"hidden",
                     "borderTopLeftRadius":"2px",
