@@ -38,6 +38,7 @@
     "cross-env": "^5.0.1",
     "css-loader": "^0.28.0",
     "node-sass": "^4.5.2",
+    "react-anime": "^0.3.4",
     "redux-devtools-extension": "^2.13.0",
     "sass-loader": "^6.0.3",
     "style-loader": "^0.16.1",

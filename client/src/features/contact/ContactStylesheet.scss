@@ -15,34 +15,37 @@
   color: $font-light;
 }
 
-.pink {
-  background-color: pink;
-}
-
-.blue {
-  background-color: blue;
-}
-
 .rowContainer {
   width: 100%;
 }
 
-.contactCard {
+.contactRow {
+  overflow: visible;
+  margin-top: .66vh;
+}
+
+.contactCardContainer{
   padding-left: .7em;
-  margin: 1.5vh .75vw;
-  max-width: 200px;
-  background-color: rgba(0,0,0,0.23);
+  margin: 2.5vh 0;
+}
+
+.contactCard {
+  width: 150px;
+  overflow: visible;
+  height: 75px;
+  display: inline-block;
 }
 
 .contactImageHolder {
   padding: 2%;
+  background-color: rgba(0,0,0,0.23);
 }
 
 .contactImageCaption {
   padding: 2%;
   color: $font-light;
   overflow: visible;
-  margin-top: .4vh;
+  margin-top: .6vh;
 }
 
 .svgHolder {
