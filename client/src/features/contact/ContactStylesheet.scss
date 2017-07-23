@@ -27,6 +27,7 @@
 .contactCardContainer{
   padding-left: .7em;
   margin: 2.5vh 0;
+  border-radius: 2px;
 }
 
 .contactCard {
@@ -36,16 +37,21 @@
   display: inline-block;
 }
 
+.contactCard:hover {
+  cursor: pointer;
+}
+
 .contactImageHolder {
-  padding: 2%;
+  padding: 2% !important;
   background-color: rgba(0,0,0,0.23);
+  box-shadow: 4px 4px 9px rgba(0, 0, 0,.5);
 }
 
 .contactImageCaption {
   padding: 2%;
   color: $font-light;
   overflow: visible;
-  margin-top: .6vh;
+  margin-top: 1vh;
 }
 
 .svgHolder {

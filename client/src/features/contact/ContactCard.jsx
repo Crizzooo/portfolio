@@ -40,7 +40,12 @@ export default class ContactCard extends React.Component {
   render(){
     console.log('rendering with state: ', this.state);
     return (
-      <div className="col-xs-5 col-sm-2 contactCardContainer center-xs" onMouseEnter={this.onMouseEnter} onMouseLeave={this.onMouseLeave}>
+      <a
+        className="col-xs-5 col-sm-2 contactCardContainer center-xs"
+        onMouseEnter={this.onMouseEnter} onMouseLeave={this.onMouseLeave}
+        href={this.props.href}
+        target={this.props.type !== 'email' ? "_blank" : "_top"}
+        >
         <div className="contactCard">
           <div className="row center-xs middle-xs">
             <div className="col-xs-12 contactImageHolder">
@@ -70,7 +75,7 @@ export default class ContactCard extends React.Component {
             }
           </div>
         </div>
-      </div>
+      </a>
     );
   }
 
