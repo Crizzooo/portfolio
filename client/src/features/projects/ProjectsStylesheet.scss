@@ -2,9 +2,7 @@
 
 .projectSection {
   background-color: $main-dark;
-  height: 85vh;
   width: 100%;
-  display: flex;
   align-items: center;
   justify-content: center;
 }
@@ -15,12 +13,12 @@
 }
 
 .triangleRow {
-  height: 25%;
+  height: 12.5vh;
   background-color: $main-dark;
 }
 
 .triangleRowTop {
-  height: 18%;
+  height: 12.5vh;
 }
 
 .triangleHolder {
@@ -51,24 +49,25 @@
 
 .projectsHeader {
   width: 100%;
-  margin-right: 16.4%;
+  margin-right: 20%;
 }
 
 .contentRow {
-  height: 65%;
-  overflow: visible;
-}
-
-.cardHolder {
-  width: 33%;
+  min-height: 400px;
+  margin: 0px 10% !important;
 }
 
 .card {
   transition: all 0.2s ease-in-out;
 }
+
 .card:hover {
   transform: translate(-2%, -2%);
   box-shadow: 7px 7px 7px -5px rgba(136, 136, 136, 0.3) !important;
+}
+
+.cardCol {
+  min-width: 400px;
 }
 
 .contentHolder {

@@ -11,7 +11,7 @@ const ContactContainer = () => (
     <div className="rowContainer">
       <div className="row">
         <div className="col-xs-12 contactHeader">
-          Contact
+          let's connect
         </div>
       </div>
       <div className="row center-xs">

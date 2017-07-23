@@ -9,7 +9,6 @@ import './ProjectsStylesheet.scss';
 
 const ProjectsContainer = () => (
   <div className="projectSection">
-    <div className="projectContainer">
       <div className="row bottom-xs triangleRowTop">
         <div className="col-xs-6 triangleHolder">
           <div className="triangle">
@@ -19,16 +18,13 @@ const ProjectsContainer = () => (
           <div className="projectsHeader">Projects</div>
         </div>
       </div>
-      <div className="row center-xs contentRow">
-        <div className="col-xs-10 contentHolder">
+      <div className="row center-xs middle-xs contentRow">
           { Object.keys(ProjectContent).map( (key) =>
             ( <ProjectCard {...ProjectContent[key]} /> )
           )}
-        </div>
       </div>
       <div className="row triangleRow bottomTriangle">
       </div>
-    </div>
   </div>
 );
 
