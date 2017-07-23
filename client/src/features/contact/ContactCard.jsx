@@ -22,6 +22,9 @@ const ContactCard = (props) => {
   );
 };
 
+
+//TODO: Rewrite so that on mouse enter, icon begins to spin and text fades down 
+
 export default ContactCard;
 
 function generateIcon(type) {
