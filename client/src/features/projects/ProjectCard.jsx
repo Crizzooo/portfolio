@@ -57,20 +57,14 @@ export default class ProjectCardControlled extends React.Component {
   }
 
   generateImage() {
-    if (this.props.title === 'react-animated-button'){
-      console.log('button!');
-      return (
-        <div style={{"backgroundImage":"url(/assets/heroBackground20003000.jpg)", "height":"300px","transform":"scale(1.15)", "backgroundSize":"contain"}}>
-          <div className="buttonProjOverlay">
-            <AnimatedButton />
-          </div>
-        </div>
-      )
-    } else {
+      let style = {
+        height: '300px',
+        transform: this.props.title == 'react-animated-button' ? 'translateY(-25px)' : 'scale(1.15)'
+
+      }
       return (
         <img src={ this.props.imgSrc ? this.props.imgSrc : "/assets/heroBackground20003000.jpg"}
-          style={{"height":"300px", "transform":"scale(1.15)"}}
+          style={{...style}}
           />)
-    }
   }
 }

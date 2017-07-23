@@ -2,7 +2,8 @@ module.exports = {
   reactAnimatedButton: {
     title: 'react-animated-button',
     subtitle: 'npm module receiving 500+ downloads in first 3 days',
-    desc: 'linkedin.com/in/crizzodev',
+    desc: 'to be written',
+    imgSrc: 'assets/hoverDemo.gif',
     links: {
       github: {
         linkTo: 'https://github.com/Crizzooo/animated-react-buttonSVG'
@@ -15,7 +16,7 @@ module.exports = {
   cashgrounds: {
     title: 'cashgrounds',
     subtitle: 'platform for competitive cash video game tournaments',
-    desc: 'github.com/crizzooo',
+    desc: 'to be written',
     imgSrc: 'assets/cashgroundsProject.png',
     links: {
       github: {
@@ -29,7 +30,7 @@ module.exports = {
   GenZed: {
     title: 'GenZed',
     subtitle: 'real-time multiplayer action game',
-    desc: 'crizzodev@gmail.com',
+    desc: 'to be written',
     imgSrc: 'assets/genzedProject1.png',
     links: {
       github: {
