@@ -18,10 +18,16 @@ const ProjectsContainer = () => (
           <div className="projectsHeader">Projects</div>
         </div>
       </div>
-      <div className="row center-xs middle-xs contentRow">
-          { Object.keys(ProjectContent).map( (key) =>
-            ( <ProjectCard {...ProjectContent[key]} /> )
-          )}
+      <div className="row center-xs middle-xs">
+        <div className="row col-xs-12 center-xs contentRow">
+          { Object.keys(ProjectContent).map( (key, i) => {
+            if (i === Object.keys(ProjectContent).length - 1) {
+              return ( <ProjectCard style={{"overflow":"visible", "maxHeight": "316px"}} { ...ProjectContent[key]} />);
+            } else {
+              return ( <ProjectCard {...ProjectContent[key]} /> );
+            }
+          }) }
+        </div>
       </div>
       <div className="row triangleRow bottomTriangle">
       </div>

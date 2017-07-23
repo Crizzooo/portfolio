@@ -18,7 +18,7 @@ export default class ProjectCardControlled extends React.Component {
   };
   render() {
     return(
-      <div className="col-xs-8 col-sm-6 col-md-4 cardCol">
+      <div className="col-xs-8 col-sm-6 col-md-4 cardCol" style={{...this.props.style}}>
         <Card expanded={this.state.expanded} onExpandChange={this.handleExpandChange} className="card" style={{"borderRadius":"2px","overflow":"hidden","margin":"2%","backgroundColor":"transparent"}}>
           <CardMedia
             actAsExpander={true}
