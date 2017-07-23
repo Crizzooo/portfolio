@@ -7,6 +7,7 @@ import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 
 import store from './store.js';
 import App from './app.js';
+import Demo from './features/demo/index.jsx';
 
 //load main css
 import './stylesheets/index.scss';
@@ -19,6 +20,7 @@ ReactDOM.render(
       <Router history={browserHistory}>
         <Route path="/" component={App}>
           <IndexRoute component={App} />
+          <Route path="demo" component={Demo} />
         </Route>
       </Router>
     </MuiThemeProvider>

@@ -7,8 +7,10 @@ import ContactContainer from './features/contact/ContactContainer.jsx';
 import Footer from './features/footer/';
 
 //load components
-const App = () => (
+// TODO: load normal view into own container and place only children here with normal view on indexRoute
+const App = (props) => (
   <div className="appContainer">
+    { props.children }
     <HeroContainer />
     <ProjectsContainer />
     <ContactContainer />
