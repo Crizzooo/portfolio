@@ -6,15 +6,17 @@ import GithubSVG from './GithubSVG.jsx';
 import LinkedInSVG from './LinkedInSVG.jsx';
 
 const ContactCard = (props) => {
-  console.log('props: ', props);
-  return (<div className=" col-xs-12 col-lg-3 contactCard">
-    <div className="contactImageHolder">
-      <div className="svgHolder">
-        { generateIcon(props.type)}
+  return (
+  <div className="col-xs-5 col-sm-4 col-lg-3 contactCard">
+    <div className="row center-xs middle-xs">
+      <div className="col-xs-12 contactImageHolder">
+        <div className="svgHolder">
+          { generateIcon(props.type)}
+        </div>
       </div>
-    </div>
-    <div className="contactImageCaption">
-      <span>{props.desc}</span>
+      <div className="col-xs-12 contactImageCaption">
+        <span>{props.desc}</span>
+      </div>
     </div>
   </div>
   );
