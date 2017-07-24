@@ -21,10 +21,6 @@ export default class HeroContainer extends React.Component {
 
   componentDidMount(){
     this.setState({mounted: true, showButton: false});
-    // setTimeout( () => {
-    //   console.log('turning on button..')
-    //   this.setState({ showButton: true});
-    // }, 2600);
   }
 
   animationComplete(){
