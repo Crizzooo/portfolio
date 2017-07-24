@@ -1,5 +1,6 @@
 import React from 'react';
 import { SparkProxy, SparkScroll } from '../../animatedContainers/app-spark';
+import cx from 'classnames';
 
 //load components
 import './FooterStylesheet.scss';
@@ -7,7 +8,7 @@ import './FooterStylesheet.scss';
 const Footer = () => (
   <SparkProxy.div className="row center-xs footerContainer">
     <SparkScroll.div
-      className="footerContent"
+      className={cx("footerContent", {})}
       timeline={{}}>
         <p>built with
           <svg className="heart" viewBox="0 0 32 29.6">

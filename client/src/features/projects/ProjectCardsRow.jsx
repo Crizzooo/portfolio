@@ -1,6 +1,5 @@
 import React from 'react';
-import TrackVisbility from 'react-on-screen';
-const { SparkScroll, SparkProxy } = require('../../animatedContainers/app-spark');
+import { SparkScroll, SparkProxy } from '../../animatedContainers/app-spark';
 
 //load components
 import ProjectCard from './ProjectCard.jsx';
