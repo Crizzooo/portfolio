@@ -11,11 +11,16 @@ import './ContactStylesheet.scss';
 const ContactContainer = () => (
   <div className="start-xs contactContainer">
     <div className="rowContainer">
-      <div className="row">
-        <div className="col-xs-12 contactHeader">
-          let's connect
-        </div>
-      </div>
+      <SparkProxy.div className="row">
+        <SparkScroll.div
+          className="col-xs-12 contactHeader"
+          timeline={{
+            topBottom: { marginTop: '-30px', opacity: 0, ease: 'easeOutBounce'},
+            topCenter: { marginTop: '0px', opacity: 1, ease: 'easeOutBounce'}
+          }}>
+            let's connect
+        </SparkScroll.div>
+      </SparkProxy.div>
       <SparkProxy.div className="row center-xs">
         <SparkScroll.div
           className="row col-xs-12 col-sm-10 col-md-8 around-xs contactRow"
