@@ -1,12 +1,12 @@
 import React from 'react';
+import { SparkScroll, SparkProxy } from '../../animatedContainers/app-spark';
 
 //load components
 import ProjectCardsRow from './ProjectCardsRow.jsx';
 
 import './ProjectsStylesheet.scss';
 
-//TODO: move out meat of project container to own file and wrap it with trackvisibility
-// switch className between 'hidden' and the desired animate.css className
+
 export default class ProjectsContainer extends React.Component {
     constructor(props){
         super(props);
@@ -20,9 +20,16 @@ export default class ProjectsContainer extends React.Component {
                         <div className="triangle">
                         </div>
                     </div>
-                    <div className="right projectsHeaderContainer col-xs-6">
-                        <div className="projectsHeader">Projects</div>
-                    </div>
+                    <SparkProxy.div className="right projectsHeaderContainer col-xs-6">
+                        <SparkScroll.div
+                            className="projectsHeader"
+                            timeline={{
+                              topBottom: { transform: 'translateY(-10vh)', opacity: 0, ease: 'easeOutExpo' },
+                              topCenter: { transform: 'translateY(0vh)', opacity: 1, ease: 'easeOutExpo' }
+                        }}>
+                            Projects
+                        </SparkScroll.div>
+                    </SparkProxy.div>
                 </div>
                 <ProjectCardsRow />
                 <div className="row triangleRow bottomTriangle">

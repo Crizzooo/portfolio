@@ -5,10 +5,11 @@ $footer-font-size: 1em;
 .footerContainer {
   background-color: rgba($main-light, 0.2);
   color: $font-light;
-  padding: .66em 0;
+  padding: 3vh 0;
   font-family: 'Roboto', sans-serif;
   font-size: $footer-font-size;
   -webkit-font-smoothing: antialiased;
+  overflow: hidden;
 }
 
 .heart {
