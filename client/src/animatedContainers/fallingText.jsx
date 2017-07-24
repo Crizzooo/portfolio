@@ -5,12 +5,12 @@ const FallingText = (props) => {
   if (props.shouldAnimate) {
     return(
       <Anime
-        translateY={[-1000, 0]}
-        duration={ (el, i, l) => 3000 }
-        delay={ (el, i) => 5000 + 100 * i}
-        elasticity={ (el, i) => 100 + i * 20}
+        translateY={[-400, 0]}
+        opacity={[0, 1]}
+        duration={ (el, i) => 3000 + 100 * i }
+        delay={ (el, i) => 3500 + 100 * i}
+        elasticity={400}
         complete={ props.onComplete ? props.onComplete : null}
-        easing="easeOutBack"
         >
         {props.text.split('').map( (el) => createLetter(el))}
       </Anime>
