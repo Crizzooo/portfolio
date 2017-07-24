@@ -19,9 +19,9 @@ const ProjectCardsRow = (props) => {
         <SparkScroll.div
             className="row col-xs-12 center-xs contentRow"
             timeline={{
-                topBottom: { marginLeft: '-80vw', opacity: 0 , ease: 'easeOutBack' },
-                topCenter: { marginLeft: '0px', opacity: 1, ease: 'easeInOutSine' },
-                bottomCenter: { marginLeft: '0px', opacity: 1, ease: 'easeInOutSine' }
+                topBottom: { marginLeft: '-40vw', opacity: 0 , ease: 'easeOutBack' },
+                topCenter: { marginLeft: '0px', opacity: 1, ease: 'easeOutBack' },
+                bottomCenter: { marginLeft: '0px', opacity: 1, ease: 'easeOutBack' }
             }}>
           { Object.keys(ProjectContent).map( (key, i) => {
             if (i === Object.keys(ProjectContent).length - 1) {
