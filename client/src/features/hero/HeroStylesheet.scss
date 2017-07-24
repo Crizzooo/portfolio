@@ -64,10 +64,18 @@
 }
 
 .lastName {
-  margin-top: -25px;
+  margin-top: -25px !important;
 }
 
 .heroHeader {
 	font-family: 'Quarto';
 	letter-spacing: 0.075em;
+}
+
+.padLeft{
+  padding-left: 63px;
+}
+
+.padRight{
+  padding-right: 65px;
 }
