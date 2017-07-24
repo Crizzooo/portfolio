@@ -26,7 +26,7 @@ const FallingText = (props) => {
 
 const createLetter = (letter) => {
   return(
-    <div className="letter">
+    <div className="letter heroHeader">
     {letter}
   </div>);
 }

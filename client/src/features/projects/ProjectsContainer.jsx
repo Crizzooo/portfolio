@@ -27,7 +27,7 @@ export default class ProjectsContainer extends React.Component {
                               topBottom: { transform: 'translateY(-10vh)', opacity: 0, ease: 'easeOutExpo' },
                               topCenter: { transform: 'translateY(0vh)', opacity: 1, ease: 'easeOutExpo' }
                         }}>
-                            Projects
+                            projects
                         </SparkScroll.div>
                     </SparkProxy.div>
                 </div>

@@ -21,7 +21,7 @@ const ProjectCardsRow = (props) => {
             if (i === Object.keys(ProjectContent).length - 1) {
               return ( <ProjectCard style={{"overflow":"visible", "maxHeight": "316px"}} { ...ProjectContent[key]} />);
             } else {
-              return ( <ProjectCard {...ProjectContent[key]} /> );
+              return ( <ProjectCard  {...ProjectContent[key]} /> );
             }
           }) }
           </SparkScroll.div>

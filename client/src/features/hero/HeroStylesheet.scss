@@ -55,10 +55,19 @@
 
 .resumeLink {
   display: inline-block;
-  padding: 25px 0;
   color: $font-light;
 }
 
 .letter {
   display: inline-block;
+  line-height: 0.5;
+}
+
+.lastName {
+  margin-top: -25px;
+}
+
+.heroHeader {
+	font-family: 'Quarto';
+	letter-spacing: 0.075em;
 }

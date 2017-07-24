@@ -1,3 +1,16 @@
+@import './colorPalette.scss';
+
+// Install Fonts
+@font-face {
+    font-family: Quarto;
+    src: url('/assets/Quarto.ttf');
+}
+
+@font-face {
+    font-family: QuartoBold;
+    src: url('/assets/QuartoBold.ttf');
+}
+
 // CSS Reset
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -28,7 +41,6 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-	line-height: 1;
 	background-color: black;
 }
 ol, ul {
@@ -45,6 +57,10 @@ q:before, q:after {
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
+}
+
+* {
+	font-family: "Roboto", "Helvetica", "Arial", sans-serif;
 }
 
 #app {

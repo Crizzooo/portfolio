@@ -34,13 +34,17 @@ export default class HeroContainer extends React.Component {
         </div>
         <div className="textContainer">
             <div className="row center-xs">
-              <div className="col-xs-7 col-sm-4 col-lg-2 col-xl-1 left">
-                { this.state.mounted ? <FallingText text="Chris" shouldAnimate={this.state.shouldAnimate} /> : null }
+              <div className="col-xs-7 col-sm-4 col-lg-2 col-xl-1 left quarto">
+                <div>
+                { this.state.mounted ? <FallingText text="CHRIS" shouldAnimate={this.state.shouldAnimate} /> : null }
+                </div>
               </div>
             </div>
             <div className="row center-xs">
-              <div className="col-xs-7 col-sm-4 col-lg-2 col-xl-1 right">
-                { this.state.mounted ? <FallingText text="Rizzo" shouldAnimate={this.state.shouldAnimate} onComplete={ this.animationComplete } /> : null }
+              <div className="col-xs-7 col-sm-4 col-lg-2 col-xl-1 right quarto lastName">
+                <div>
+                  { this.state.mounted ? <FallingText text="RIZZO" shouldAnimate={this.state.shouldAnimate} onComplete={ this.animationComplete } /> : null }
+                </div>
               </div>
             </div>
             <div className="row center-xs">

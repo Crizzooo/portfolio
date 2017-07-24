@@ -51,6 +51,9 @@
   width: 100%;
   margin-right: 5%;
   margin-bottom: 10px;
+  font-family: 'Quarto';
+  letter-spacing: .075em;
+  font-weight: 100;
 }
 
 .contentRow {
@@ -90,4 +93,8 @@
 
 .icon-github::before {
   content: "\eab0";
+}
+
+.projCard {
+  color: $font-light;
 }

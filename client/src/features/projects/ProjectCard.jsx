@@ -19,13 +19,25 @@ export default class ProjectCardControlled extends React.Component {
   render() {
     return(
       <div className="col-xs-8 col-sm-6 col-md-4 cardCol" style={{...this.props.style}}>
-        <Card expanded={this.state.expanded} onExpandChange={this.handleExpandChange} className="card" style={{"borderRadius":"2px","overflow":"hidden","margin":"2%","backgroundColor":"transparent"}}>
+        <Card expanded={this.state.expanded} onExpandChange={this.handleExpandChange} className="card projCard" style={{"borderRadius":"2px","overflow":"hidden","margin":"2%","backgroundColor":"transparent"}}
+        >
           <CardMedia
             actAsExpander={true}
             showExpandableButton={true}
             openIcon={null}
             closeIcon={null}
-            overlay={<CardTitle title={ this.props.title} subtitle={ this.props.subtitle }/>}
+            overlay={
+              <CardTitle
+                title={ this.props.title}
+                titleStyle={{
+                  "color":"beige",
+                  "letterSpacing":"0.05em"
+                }}
+                subtitle={ this.props.subtitle }
+                subtitleStyle={{
+                  "letterSpacing":"0.05em"}}
+                />
+            }
             overlayContentStyle={{"padding":"0",  "textAlign":"left"}}
             style={{"overflow":"hidden",
                     "borderTopLeftRadius":"2px",
@@ -35,11 +47,11 @@ export default class ProjectCardControlled extends React.Component {
           >
           { this.generateImage() }
           </CardMedia>
-          <CardText expandable={true} style={{"backgroundColor":"rgb(33, 33, 33)", "color":"white"}}>
+          <CardText expandable={true} style={{"backgroundColor":"rgb(33, 33, 33)"}}>
             <p>{ this.props.desc }</p>
           </CardText>
           <CardActions expandable={true} style={{"backgroundColor":"rgb(33, 33, 33)", "padding":"0px 8px 4px 8px", "textAlign":"left", "borderBottomLeftRadius":"2px",
-          "borderBottomRightRadius":"2px", "color":"white"}}>
+          "borderBottomRightRadius":"2px"}}>
             { this.props.links ?
               Object.keys(this.props.links).map( (link) =>
                 (<Icon
