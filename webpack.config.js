@@ -32,9 +32,11 @@ module.exports = {
     },
     {
       test: /\.css$/,
-      include: /flexboxgrid/,
+      include: [/flexboxgrid/, /animate.css/],
       use: [
-        'css-loader'
+        'style-loader',
+        'css-loader',
+        'sass-loader'
       ]
     }
   ]

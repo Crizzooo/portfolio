@@ -1,38 +1,33 @@
 import React from 'react';
 
 //load components
-import ProjectCard from './ProjectCard.jsx';
-import ProjectContent from './ProjectContent.js';
+import ProjectCardsRow from './ProjectCardsRow.jsx';
 
 import './ProjectsStylesheet.scss';
 
+//TODO: move out meat of project container to own file and wrap it with trackvisibility
+// switch className between 'hidden' and the desired animate.css className
+export default class ProjectsContainer extends React.Component {
+    constructor(props){
+        super(props);
+    }
 
-const ProjectsContainer = () => (
-  <div className="projectSection">
-      <div className="row bottom-xs triangleRowTop">
-        <div className="col-xs-6 triangleHolder">
-          <div className="triangle">
-          </div>
-        </div>
-        <div className="right projectsHeaderContainer col-xs-6">
-          <div className="projectsHeader">Projects</div>
-        </div>
-      </div>
-      <div className="row center-xs middle-xs">
-        <div className="row col-xs-12 center-xs contentRow">
-          { Object.keys(ProjectContent).map( (key, i) => {
-            if (i === Object.keys(ProjectContent).length - 1) {
-              return ( <ProjectCard style={{"overflow":"visible", "maxHeight": "316px"}} { ...ProjectContent[key]} />);
-            } else {
-              return ( <ProjectCard {...ProjectContent[key]} /> );
-            }
-          }) }
-        </div>
-      </div>
-      <div className="row triangleRow bottomTriangle">
-      </div>
-  </div>
-);
-
-
-export default ProjectsContainer;
+    render(){
+        return(
+            <div className="projectSection">
+                <div className="row bottom-xs triangleRowTop">
+                    <div className="col-xs-6 triangleHolder">
+                        <div className="triangle">
+                        </div>
+                    </div>
+                    <div className="right projectsHeaderContainer col-xs-6">
+                        <div className="projectsHeader">Projects</div>
+                    </div>
+                </div>
+                <ProjectCardsRow />
+                <div className="row triangleRow bottomTriangle">
+                </div>
+            </div>
+        );
+    }
+}

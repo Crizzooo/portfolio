@@ -1,7 +1,9 @@
 import React from 'react';
+import { SparkProxy, SparkScroll } from '../../animatedContainers/app-spark';
 
 import ContactCard from './ContactCard.jsx';
 import ContactContent from './ContactContent.js';
+
 
 //load components
 import './ContactStylesheet.scss';
@@ -14,13 +16,16 @@ const ContactContainer = () => (
           let's connect
         </div>
       </div>
-      <div className="row center-xs">
-        <div className="row col-xs-12 col-sm-10 col-md-8 around-xs contactRow">
+      <SparkProxy.div className="row center-xs">
+        <SparkScroll.div
+          className="row col-xs-12 col-sm-10 col-md-8 around-xs contactRow"
+          timeline={{
+        }}>
           { Object.keys(ContactContent).map( (key) =>
             ( <ContactCard {...ContactContent[key]} /> )
           )}
-        </div>
-      </div>
+        </SparkScroll.div>
+      </SparkProxy.div>
     </div>
   </div>
 );

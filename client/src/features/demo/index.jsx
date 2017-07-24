@@ -1,5 +1,6 @@
 import React from 'react';
 import AnimatedButton from 'react-animated-button';
+import LeftEntrance from '../../animatedContainers/leftEntrance.jsx';
 
 import './demoStylesheet.scss';
 
@@ -24,6 +25,3 @@ const Demo = (props) => {
 };
 
 export default Demo;
-
-
-// strokeColor, buttonText, animatedText, textStyle, normalTextClassName   color: #18F38C
