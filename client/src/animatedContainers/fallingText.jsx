@@ -7,7 +7,7 @@ const FallingText = (props) => {
       <Anime
         translateY={[-1000, 0]}
         duration={ (el, i, l) => 3000 }
-        delay={ (el, i) => 2000 + 100 * i}
+        delay={ (el, i) => 5000 + 100 * i}
         elasticity={ (el, i) => 100 + i * 20}
         complete={ props.onComplete ? props.onComplete : null}
         easing="easeOutBack"

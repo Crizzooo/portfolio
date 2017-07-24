@@ -49,7 +49,7 @@ export default class HeroContainer extends React.Component {
             </div>
             <div className="row center-xs">
               { this.state.showButton ?
-                <a className="resumeLink animated bounce" href="/resume"><AnimatedButton strokeColor="beige" buttonText="view resume" containerStyle={{"color":"beiege"}}/></a>
+                <a className="resumeLink animated fadeInDown" href="/resume"><AnimatedButton strokeColor="beige" buttonText="view resume" containerStyle={{"color":"beiege"}}/></a>
                 :
                 <a className="resumeLink hidden" href="/resume"><AnimatedButton strokeColor="beige" buttonText="view resume" containerStyle={{"color":"beiege"}}/></a>
               }
