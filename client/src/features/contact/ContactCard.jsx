@@ -38,7 +38,6 @@ export default class ContactCard extends React.Component {
   }
 
   render(){
-    console.log('rendering with state: ', this.state);
     return (
       <a
         className="col-xs-5 col-sm-2 contactCardContainer center-xs"

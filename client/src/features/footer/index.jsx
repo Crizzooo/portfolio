@@ -26,10 +26,10 @@ export default class Footer extends React.Component {
           proxy="footerProxy"
           timeline={{
             topBottom: {
-              onDown: () => {this.setState({entering: true, leaving: false}); console.log('this.state: ', this.state);}
+              onDown: () => this.setState({entering: true, leaving: false})
             },
             bottomBottom: {
-              onUp: () => { this.setState({entering: false, leaving: true}); console.log('this.state: ', this.state);}
+              onUp: () =>  this.setState({entering: false, leaving: true})
             }
           }}>
             <p>built with
