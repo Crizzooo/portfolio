@@ -15,8 +15,8 @@ const ContactContainer = () => (
         <SparkScroll.div
           className="col-xs-12 contactHeader"
           timeline={{
-            topBottom: { marginTop: '-30px', opacity: 0, ease: 'easeOutBounce'},
-            topCenter: { marginTop: '0px', opacity: 1, ease: 'easeOutBounce'}
+            topBottom: { transform: 'translateY(-30px)', opacity: 0, ease: 'easeOutSine'},
+            topCenter: { transform: 'translateY(0px)', opacity: 1, ease: 'easeOutSine'}
           }}>
             let's connect
         </SparkScroll.div>
@@ -25,9 +25,10 @@ const ContactContainer = () => (
         <SparkScroll.div
           className="row col-xs-12 col-sm-10 col-md-8 around-xs contactRow"
           timeline={{
-            topBottom: { marginLeft: '-15vw', ease: 'easeOutExpo' },
-            bottomBottom: { opacity: 0 , ease: 'easeOutExpo' },
-            topCenter: { marginLeft: '0px', opacity: 1, ease: 'easeOutExpo' }
+            // topBottom: { marginLeft: '-15vw', ease: 'easeOutSine' },
+            // bottomBottom: { opacity: 0, marginLeft: '0px', ease: 'easeOutSine' }
+            topBottom: { transform: 'translateY(-30px)', opacity: 0, ease: 'easeOutSine'},
+            topCenter: { transform: 'translateY(0px)', opacity: 1, ease: 'easeOutSine'}
         }}>
           { Object.keys(ContactContent).map( (key) =>
             ( <ContactCard {...ContactContent[key]} /> )
