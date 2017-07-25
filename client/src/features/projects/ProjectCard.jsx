@@ -1,5 +1,5 @@
 import React from 'react';
-import {Card, CardHeader, CardMedia, CardTitle, CardText, CardActions} from 'material-ui/card';
+import {Card, CardHeader, CardMedia, CardTitle, CardText, CardActions} from 'material-ui';
 import Icon from './Icon.jsx';
 import AnimatedButton from 'react-animated-button';
 
@@ -11,11 +11,13 @@ export default class ProjectCardControlled extends React.Component {
       expanded: false,
     };
     this.generateImage = this.generateImage.bind(this);
+    this.handleExpandChange = this.handleExpandChange.bind(this);
   }
 
-  handleExpandChange = (expanded) => {
+  handleExpandChange(expanded) {
     this.setState({expanded: expanded});
-  };
+  }
+
   render() {
     return(
       <div className="col-xs-8 col-sm-6 col-md-4 cardCol" style={{...this.props.style}}>
