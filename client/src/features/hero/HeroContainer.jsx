@@ -4,7 +4,7 @@ import React from 'react';
 import AnimatedButton from 'react-animated-button';
 import FallingText from '../../animatedContainers/fallingText.jsx';
 
-//load components
+//load componentss
 import './HeroStylesheet.scss';
 
 export default class HeroContainer extends React.Component {
